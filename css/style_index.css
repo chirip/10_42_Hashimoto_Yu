@@ -1,0 +1,75 @@
+/* index.php*/
+body{
+    background-image: url(../title.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.wrapper{
+    height: 370px;
+    position: absolute;
+    top:365px;
+    left:110px;
+    background-color:  #464646;
+    overflow: scroll;
+}
+
+table{
+    table-layout: fixed; 
+	border-spacing: 0;
+    border-collapse: separate;
+    text-align: center;
+    width: 1200px;
+    height: 390px;
+}
+
+.w1{
+    width: 70px;
+}
+.w5{
+    width: 200px;
+}
+table th,table td{
+    overflow-wrap: break-word;
+	border-top: 1px solid rgb(155, 156, 155);
+	border-left: 1px solid rgb(155, 156, 155);
+}
+table th{
+	padding: 5px 10px;
+	/* background: #640600; */
+    color: #FFFFFF;
+    background: #260704;
+    background: -moz-linear-gradient(top, #260704 0%, #f0b7a1 14%, #f0b7a1 14%, #54180a 26%, #280a04 100%, #54150a 100%);
+    background: -webkit-linear-gradient(top, #260704 0%,#f0b7a1 14%,#f0b7a1 14%,#54180a 26%,#280a04 100%,#54150a 100%);
+    background: linear-gradient(to bottom, #260704 0%,#f0b7a1 14%,#f0b7a1 14%,#54180a 26%,#280a04 100%,#54150a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#260704', endColorstr='#54150a',GradientType=0 );}
+
+table td{
+	padding: 2px 5px;
+	background: #FCFCFC;
+	color: #290000;
+}
+table tr:nth-child(even) td{
+	background: #EEEEEE;
+}
+
+table th:last-child,table td:last-child{
+	border-right: 1px solid　rgb(155, 156, 155);
+}
+table tr:last-child th,table tr:last-child td{
+	border-bottom: 1px solid rgb(155, 156, 155);
+}
+
+table tr:not(:first-child) th,table tr:not(:first-child) td{
+	border-top:none;
+}
+
+tbody tr:hover td {
+    color: #666;
+    background: rgb(236, 213, 162);
+}
+
+
+

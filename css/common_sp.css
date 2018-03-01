@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*===============================================
+●common_sp.css  画面の横幅が750px以下
+===============================================*/
+@media print , screen and (max-width : 750px ){
+
+/*--------------------------------------------
+		サイト基本設定
+--------------------------------------------*/
+
+body {
+	max-width: 750px;
+    height: auto;
+	color:#333;
+    font-size: 14px;
+	font-family: "游ゴシック","YuGothic", "游ゴシック体","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: normal;
+    line-height: 1.6;
+	-webkit-text-size-adjust: 100%;
+	padding-bottom: 19%;
+}
+a {
+	color:#333333;
+	text-decoration:none;
+	display:inline-block;
+}
+img {
+	border: 0;
+	max-width:100%;
+	height:auto
+}
+
+/*--------------------------------------------
+		共通クラス／共通コンテンツ
+--------------------------------------------*/
+
+.for_pc {
+	display:none;
+}
+.last {
+	margin-bottom:0 !important;
+}
+
+/*--------------------------------------------
+		header / ヘッダー
+--------------------------------------------*/
+
+#header {
+	width: 100%;
+}
+#header .hdr_sp {
+	position:relative;
+}
+#header .hdr_inner {
+	padding: 12px 3% 10px;
+    background-color: rgba(255,255,255,1.0);
+    border-bottom: #fff 1px solid;
+}
+#header .hdr_inner .hdr_logo {
+	float: left;
+    width: 150px;
+    padding: 8px 0;
+}
+#header .hdr_inner ul {
+	float:right;
+}
+#header .hdr_inner ul li {
+	float: left;
+    width: 35px;
+    margin-right: 5px;
+}
+#header .hdr_inner ul li:last-child {
+    margin-right: 5px;
+}
+#header #sp_nav {
+    width: 94%;
+    background-color: rgba(51,51,51,0.9);
+    position: absolute;
+    top: 69px;
+    z-index: 10;
+    padding: 3% 3%;
+    display: none;
+}
+#header #sp_nav li {
+	margin-bottom:1%;
+}
+#header #sp_nav li:last-child {
+	margin-bottom:0;
+}
+#header #sp_nav li a {
+	width: 90%;
+    color: #fff;
+    font-weight: bold;
+    background-color: #666;
+    padding: 8px 5%;
+}
+#header #sp_nav li a span {
+	color:#FE622E;
+	font-size:10px;
+	font-weight:normal;
+	display:inline-block;
+	margin-left:10px;
+}
+
+/*--------------------------------------------
+	Contents / コンテンツ大枠
+--------------------------------------------*/
+
+#contents {
+	width:100%;
+}
+#main_cts {
+	width: 94%;
+    padding: 30px 0 50px;
+    margin: 0 3%;
+}
+#side_cts {
+	width: 94%;
+	padding-bottom: 30px;
+    margin: 0 3%;
+}
+
+/*--------------------------------------------
+		breadcrumb / ぱんくず
+--------------------------------------------*/
+
+#breadcrumb,
+#column_breadcrumb {
+	display:none;
+}
+
+/*--------------------------------------------
+		footer / フッター
+--------------------------------------------*/
+
+#footer {
+	width: 100%;
+    position: relative;
+    background: url(../Images/common/btm_bg_sp.jpg) no-repeat;
+    background-size: cover;
+}
+#footer .totop a {
+	width:100%;
+	text-align:center;
+	background-color:rgba(102,102,102,0.8);
+	padding:8px 0;
+}
+#footer .totop a img {
+	width:60px;
+}
+#footer .ftr_sp {
+	padding: 15px 0 8px;
+}
+#footer .ftr_sp .ftr_top {
+	text-align: center;
+    padding: 0 13px;
+}
+#footer .ftr_sp .ftr_top .ftr_logo {
+	width: 165px;
+    margin: 0 auto 10px;
+}
+#footer .ftr_sp .ftr_top ul {
+	text-align:center;
+}
+#footer .ftr_sp .ftr_top ul li {
+	width: 34px;
+    height: 34px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+#footer .ftr_sp .ftr_top ul li:nth-child(1) {
+	background-color:#3b5998;
+}
+#footer .ftr_sp .ftr_top ul li:nth-child(2) {
+	background-color:#1da1f2;
+}
+#footer .ftr_sp .ftr_top ul li:last-child {
+	margin-right:0;
+}
+#footer .ftr_sp .ftr_mdl {
+	color: #fff;
+    font-size: 12px;
+	text-align:center;
+	padding:10px 0;
+	display:none;
+}
+#footer .ftr_sp .ftr_mdl dt {
+	font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+#footer .ftr_sp .ftr_btm {
+	border-top:#fff 1px solid;
+	border-bottom:#fff 1px solid;
+	display:none;
+}
+#footer .ftr_sp .ftr_btm li {
+	float:left;
+	width:50%;
+	box-sizing:border-box;
+}
+#footer .ftr_sp .ftr_btm li:nth-child(2) {
+	float:right;
+	border-left:#fff 1px solid;
+}
+#footer .ftr_sp .ftr_btm li a {
+	width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+#footer #copyright {
+	color: #fff;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 8px;
+}
+#footer #copyright a {
+  color: #fff;
+  text-decoration: underline;
+}
+#footer #copyright a:hover {
+  text-decoration: none;
+}
+.fixmenu_sp {
+    width: 96%;
+    padding: 2%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10000;
+    background-color: rgba(30, 27, 27, 0.8);
+}
+
+}
